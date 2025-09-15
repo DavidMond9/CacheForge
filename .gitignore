@@ -1,1 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
 .env
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# SQLite and temp results
+DB/*.db
+results/
+!results/.gitkeep
+
+# ChampSim build artifacts, traces, and generated binaries
+ChampSim_CRC2/lib/*.a
+ChampSim_CRC2/new_policies/*.out
+ChampSim_CRC2/traces/
+ChampSim_CRC2/build/
+ChampSim_CRC2/**/CMakeFiles/
+*.o
+*.so
+*.a
+
+# Big generated files
+*.gz
+*.trace
